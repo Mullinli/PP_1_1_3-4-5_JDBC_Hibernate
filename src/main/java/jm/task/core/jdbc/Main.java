@@ -7,6 +7,6 @@ public class Main {
     public static void main(String[] args) {
         UserService userService = new UserServiceImpl();
         userService.saveUser("Yaroslav", "Latushkov", (byte) 20);
-        System.out.println(userService.getAllUsers().get(0));
+        userService.cleanUsersTable();
     }
 }
